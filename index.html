@@ -4,48 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kathmandu Peace Guest House, Paknajol</title>
-<meta name="description" content="Twin rooms and a garden terrace on Paknajol Marg, Kathmandu, from about €12 a night. Email or call +977 1-4980369 to book.">
+<meta name="description" content="A family-run guest house with a garden terrace in Paknajol, Kathmandu, from about €12 a night. Book by email, phone or WhatsApp.">
 <link rel="canonical" href="https://rejinkarki77.github.io/kathmandu-peace-guest-house/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kathmandu Peace Guest House, Paknajol">
-<meta property="og:description" content="Twin rooms and a garden terrace on Paknajol Marg, Kathmandu. Email or call to book.">
+<meta property="og:description" content="A family-run guest house with a garden terrace in Paknajol, Kathmandu. Book by email, phone or WhatsApp.">
 <meta property="og:url" content="https://rejinkarki77.github.io/kathmandu-peace-guest-house/">
 <meta property="og:image" content="https://rejinkarki77.github.io/kathmandu-peace-guest-house/images/room-twin.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Hotel","name":"Kathmandu Peace Guest House","url":"https://rejinkarki77.github.io/kathmandu-peace-guest-house/","image":"https://rejinkarki77.github.io/kathmandu-peace-guest-house/images/room-twin.jpg","telephone":"+977 1-4980369","email":"ktmpeace@ntc.net.np","checkoutTime":"12:00","numberOfRooms":16,"address":{"@type":"PostalAddress","streetAddress":"Paknajol Marg","addressLocality":"Kathmandu","addressRegion":"Bagmati Province","postalCode":"44600","addressCountry":"NP"}}
 </script>
-<link rel="preconnect" href="https://api.fontshare.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://api.fontshare.com/v2/css?f[]=sentient@300,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav">
-  <div class="container">
-    <nav class="nav__bar" aria-label="Main">
-      <a class="nav__mark" href="#top" aria-label="Kathmandu Peace Guest House, home">Kathmandu Peace</a>
-      <ul class="nav__links">
-        <li><a href="#rooms">Rooms</a></li>
-        <li><a href="#garden">Garden</a></li>
-        <li><a href="#stay">The stay</a></li>
-        <li><a href="#find-us">Find us</a></li>
-      </ul>
-      <details class="nav__menu">
-        <summary>Menu</summary>
-        <ul>
-          <li><a href="#rooms">Rooms</a></li>
-          <li><a href="#garden">Garden</a></li>
-          <li><a href="#stay">The stay</a></li>
-          <li><a href="#find-us">Find us</a></li>
-        </ul>
-      </details>
-      <a class="btn btn--small" href="#book">Book a room</a>
+<header class="site-header" id="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="#top" aria-label="Kathmandu Peace Guest House, home">
+      <span class="brand__name">Kathmandu Peace</span>
+      <span class="brand__sub">Guest House, Paknajol</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#welcome">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#stay">Your stay</a>
+      <a href="#garden">Garden</a>
+      <a href="#find-us">Find us</a>
+      <a class="btn btn--gold btn--small" href="#book">Book a room</a>
     </nav>
   </div>
 </header>
@@ -53,176 +46,251 @@
 <main id="main">
 
   <section class="hero" id="top">
-    <div class="hero__bg" data-slot="reception" data-alt="The reception desk, guests checking in">
-      <img src="images/reception.jpg" width="1012" height="680" alt="Two guests checking in at the reception desk" fetchpriority="high">
-    </div>
-    <div class="container hero__inner">
-      <div class="hero__text">
-        <h1>Kathmandu Peace Guest House</h1>
-        <p class="lead">Twin rooms and a garden terrace in Paknajol, from about €12.</p>
-        <div class="hero__actions">
-          <a class="btn btn--light" href="#rooms">See the rooms</a>
-          <a class="btn btn--wa" href="https://wa.me/9779851013309" rel="noopener"><img src="https://cdn.simpleicons.org/whatsapp/f3efe9" width="20" height="20" alt="">WhatsApp us</a>
-        </div>
+    <img class="hero__photo" src="images/reception.jpg" width="1012" height="680" alt="Two guests checking in at the reception desk" fetchpriority="high">
+    <div class="wrap hero__content">
+      <p class="hero__place">Paknajol Marg, Kathmandu</p>
+      <h1>Kathmandu Peace Guest House</h1>
+      <p class="hero__line">A family-run house with a garden terrace, a short walk from Thamel. Rooms from about €12 a night.</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#book">Check your dates</a>
+        <a class="btn btn--ghost" href="#rooms">See the rooms</a>
       </div>
+    </div>
+    <svg class="hero__ridge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V84l96-34 70 26 118-62 92 48 64-22 132 54 84-40 110 30 96-58 104 46 78-22 120 40 96-30 80 24 100-36v72z"/></svg>
+  </section>
 
-      <form class="booking stock" id="book" data-email="ktmpeace@ntc.net.np" data-endpoint="" novalidate aria-label="Check availability">
-        <div class="field">
-          <label for="checkin">Check in</label>
-          <input id="checkin" name="checkin" type="date" required>
-        </div>
-        <div class="field">
-          <label for="checkout">Check out</label>
-          <input id="checkout" name="checkout" type="date" required>
-        </div>
-        <div class="field">
-          <label for="guests">Guests</label>
-          <select id="guests" name="guests">
-            <option value="1">1 guest</option>
-            <option value="2" selected>2 guests</option>
-            <option value="3">3 guests</option>
-            <option value="4">4 guests</option>
-          </select>
-        </div>
-        <button class="btn" type="submit">Check availability</button>
+  <div class="wrap booking-wrap">
+    <form class="booking" id="book" data-email="ktmpeace@ntc.net.np" novalidate aria-label="Check availability">
+      <div class="field">
+        <label for="checkin">Check in</label>
+        <input id="checkin" name="checkin" type="date" required>
+      </div>
+      <div class="field">
+        <label for="checkout">Check out</label>
+        <input id="checkout" name="checkout" type="date" required>
+      </div>
+      <div class="field">
+        <label for="guests">Guests</label>
+        <select id="guests" name="guests">
+          <option value="1">1 guest</option>
+          <option value="2" selected>2 guests</option>
+          <option value="3">3 guests</option>
+          <option value="4">4 guests</option>
+        </select>
+      </div>
+      <button class="btn btn--blue" type="submit">Check availability</button>
+      <div class="booking__after">
         <p class="booking__help" id="booking-help" aria-live="polite"></p>
-        <button class="link booking__copy" type="button" hidden>Copy the enquiry</button>
-      </form>
-    </div>
-  </section>
+        <button class="text-link booking__copy" type="button" hidden>Copy the enquiry</button>
+      </div>
+    </form>
+  </div>
 
-  <section class="rooms" id="rooms">
-    <div class="container rooms__inner">
-      <div class="rooms__text">
-        <h2>Two beds, a desk, a window.</h2>
-        <p class="lead">Rooms are plain and warm, with wood underfoot and daylight on two sides.</p>
-        <dl class="ruled facts">
-          <div><dt>Beds</dt><dd>Two singles, made with white linen</dd></div>
-          <div><dt>Desk</dt><dd>A long wooden desk and a coat stand</dd></div>
-          <div><dt>Floor</dt><dd>Parquet, with a woven rug between the beds</dd></div>
-          <div><dt>Screen</dt><dd>A television on the wall</dd></div>
+  <section class="section welcome" id="welcome">
+    <div class="wrap welcome__grid">
+      <div class="welcome__text">
+        <h2>A small house that knows its guests.</h2>
+        <p class="lead">Sixteen rooms, a family at the front desk day and night, and a garden terrace to come back to after the city.</p>
+        <p>The house stands on Paknajol Marg, at the edge of Thamel. Trekking shops, cafés and the old town are a walk away, and the street outside is calmer than the ones you will have just left.</p>
+        <dl class="figures">
+          <div><dt>4.2 <span>out of 5</span></dt><dd>Guest rating on Google</dd></div>
+          <div><dt>267</dt><dd>Google reviews, November 2026</dd></div>
+          <div><dt>16</dt><dd>Rooms in the house</dd></div>
         </dl>
+        <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu" rel="noopener">Read the reviews on Google</a>
       </div>
-      <div class="rooms__prints" data-reveal>
-      <figure class="print rooms__print">
-        <div class="print__frame print__frame--wide" data-slot="room" data-alt="A twin room with corner windows and a desk">
-          <img src="images/room-window.jpg" width="796" height="442" alt="Twin room with corner windows, a wooden desk and parquet floor" loading="lazy">
-        </div>
-        <figcaption><span>Corner twin</span><span class="muted">Windows on two walls</span></figcaption>
-      </figure>
-      <figure class="print">
-        <div class="print__frame" data-slot="twin" data-alt="A twin room at the guest house, beds made, lamp lit">
-          <img src="images/room-twin.jpg" width="894" height="592" alt="Twin room with two made beds, striped blankets and a lit bedside lamp" loading="lazy">
-        </div>
-        <figcaption><span>Twin room</span><span class="muted">Paknajol Marg</span></figcaption>
-      </figure>
+      <div class="welcome__photos">
+        <img class="welcome__photo-a" src="images/garden.jpg" width="874" height="592" alt="Garden terrace with a table among red flowers and palms" loading="lazy">
+        <img class="welcome__photo-b" src="images/room-twin.jpg" width="894" height="592" alt="Twin room with two made beds and a lit bedside lamp" loading="lazy">
       </div>
     </div>
   </section>
 
-  <section class="word" aria-label="Guest rating">
-    <div class="container word__inner">
-      <p class="statement">Guests on Google rate the house 4.2 out of 5.</p>
-      <div class="word__side">
-        <dl class="ruled facts">
-          <div><dt>Reviews</dt><dd class="num">267 on Google</dd></div>
-          <div><dt>Class</dt><dd>3-star hotel</dd></div>
-          <div><dt>Checked</dt><dd><time datetime="2026-11">November 2026</time></dd></div>
-        </dl>
-        <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu" rel="noopener">Read the reviews on Google</a></p>
+  <section class="section rooms" id="rooms">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Rooms</h2>
+        <p class="lead">Plain, warm and clean, with wood underfoot and daylight through timber windows.</p>
       </div>
+      <div class="rooms__grid">
+        <article class="room">
+          <button class="room__photo" type="button" data-zoom="images/room-twin.jpg" data-alt="Twin room with two made beds and a lit bedside lamp" aria-label="Enlarge photo of the twin room">
+            <img src="images/room-twin.jpg" width="894" height="592" alt="Twin room with two made beds and a lit bedside lamp" loading="lazy">
+          </button>
+          <div class="room__body">
+            <h3>Twin room</h3>
+            <p>Two single beds made with white linen and striped blankets, a bedside lamp and full curtains.</p>
+            <ul class="room__list">
+              <li>Two single beds</li>
+              <li>Free Wi-Fi</li>
+              <li>Bedside table and lamp</li>
+            </ul>
+            <div class="room__actions">
+              <a class="btn btn--blue btn--small" href="#book">Check dates</a>
+              <a class="text-link" href="https://wa.me/9779851013309?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20a%20twin%20room." rel="noopener">Ask on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+        <article class="room">
+          <button class="room__photo" type="button" data-zoom="images/room-window.jpg" data-alt="Twin room with corner windows, a wooden desk and parquet floor" aria-label="Enlarge photo of the corner twin room">
+            <img src="images/room-window.jpg" width="796" height="442" alt="Twin room with corner windows, a wooden desk and parquet floor" loading="lazy">
+          </button>
+          <div class="room__body">
+            <h3>Corner twin</h3>
+            <p>Windows on two walls, a long wooden desk, a coat stand and a parquet floor.</p>
+            <ul class="room__list">
+              <li>Two single beds</li>
+              <li>Writing desk</li>
+              <li>Television</li>
+            </ul>
+            <div class="room__actions">
+              <a class="btn btn--blue btn--small" href="#book">Check dates</a>
+              <a class="text-link" href="https://wa.me/9779851013309?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20a%20corner%20twin%20room." rel="noopener">Ask on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="rooms__note">Travelling alone, as a couple or as a family? Tell us who is coming and we will suggest a room.</p>
     </div>
   </section>
 
-  <section class="garden" id="garden">
-    <div class="container garden__inner">
-      <figure class="print garden__print" data-reveal>
-        <div class="print__frame" data-slot="garden" data-alt="The garden terrace, chairs among the plants">
-          <img src="images/garden.jpg" width="874" height="592" alt="Garden terrace with a table and chair among red flowers and palms, a painted mountain behind" loading="lazy">
-        </div>
-        <figcaption><span>Garden terrace</span><span class="muted">Painted peaks on the wall</span></figcaption>
-      </figure>
-      <div class="garden__text">
-        <h2>A terrace under painted peaks.</h2>
-        <p class="lead">A table sits among red flowers and palms, with the Himalaya painted on the wall behind.</p>
-        <p><a class="link" href="#book">Pick your dates</a></p>
+  <section class="section stay" id="stay">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>What comes with your stay</h2>
       </div>
-    </div>
-  </section>
-
-  <section class="stay" id="stay">
-    <div class="container">
-      <h2>What comes with the room.</h2>
       <ul class="stay__grid">
-        <li><h3>Free Wi-Fi</h3><p>In the rooms and shared areas.</p></li>
-        <li><h3>Front desk, day and night</h3><p>Staffed around the clock.</p></li>
-        <li><h3>Restaurant</h3><p>Meals served in the house.</p></li>
-        <li><h3>Breakfast</h3><p>Continental, each morning, as an extra.</p></li>
-        <li><h3>Airport pickup</h3><p>Arranged ahead, for a charge.</p></li>
-        <li><h3>Sixteen rooms</h3><p>A small, family-run house.</p></li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a14 14 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>
+          <h3>Free Wi-Fi</h3>
+          <p>In the rooms and the shared areas.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h3>Front desk, day and night</h3>
+          <p>Someone is at reception around the clock.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18M4.5 3v5a2.5 2.5 0 0 0 5 0V3M17 21V3c-2.2 1.8-3.5 4.5-3.5 8H17"/></svg>
+          <h3>Restaurant</h3>
+          <p>Meals cooked and served in the house.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg>
+          <h3>Breakfast</h3>
+          <p>Continental, each morning, as an extra.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 3 3 6zM9 14l5-5"/></svg>
+          <h3>Airport pickup</h3>
+          <p>Arranged before you fly, for a charge.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 4 6 0 9-4-3-3-6 0-9zM12 12v9M7 15c2 0 4 1 5 3M17 15c-2 0-4 1-5 3"/></svg>
+          <h3>Garden terrace</h3>
+          <p>A table among the flowers, open to guests.</p>
+        </li>
       </ul>
     </div>
   </section>
 
-  <section class="find" id="find-us">
-    <div class="container find__inner">
-      <div class="find__head">
-        <h2>Find the house in Paknajol.</h2>
-        <div class="find__actions">
-          <a class="btn" href="tel:+97714980369">Call to book</a>
-          <a class="btn btn--wa" href="https://wa.me/9779851013309" rel="noopener"><img src="https://cdn.simpleicons.org/whatsapp/f3efe9" width="20" height="20" alt="">Message on WhatsApp</a>
-          <a class="link" href="https://www.google.com/maps/search/?api=1&query=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu" rel="noopener">Get directions</a>
-        </div>
+  <section class="section garden" id="garden">
+    <div class="wrap garden__grid">
+      <button class="garden__photo" type="button" data-zoom="images/garden.jpg" data-alt="Garden terrace with a table and chair among red flowers and palms, a painted mountain behind" aria-label="Enlarge photo of the garden terrace">
+        <img src="images/garden.jpg" width="874" height="592" alt="Garden terrace with a table and chair among red flowers and palms, a painted mountain behind" loading="lazy">
+      </button>
+      <div class="garden__text">
+        <h2>A terrace under painted peaks.</h2>
+        <p class="lead">A table sits among red flowers and palms, with the Himalaya painted on the wall behind it.</p>
+        <p>Bring a book or a map and plan tomorrow from here.</p>
+        <a class="btn btn--blue" href="#book">Check your dates</a>
       </div>
-      <table class="details">
-        <tbody>
-          <tr><th scope="row">Address</th><td>Paknajol Marg, Kathmandu, Bagmati Province 44600, Nepal</td></tr>
-          <tr><th scope="row">Telephone</th><td class="num"><a href="tel:+97714980369">+977 1-4980369</a>, or WhatsApp <a href="https://wa.me/9779851013309" rel="noopener">+977 985 1013309</a></td></tr>
-          <tr><th scope="row">Email</th><td><a href="mailto:ktmpeace@ntc.net.np">ktmpeace@ntc.net.np</a></td></tr>
-          <tr><th scope="row">Check in</th><td>From 12 noon, and out by 12 noon on your last day</td></tr>
-          <tr><th scope="row">Rate</th><td>From about €12 a night for two, seen on Google in November 2026. Ask for the rate on your dates.</td></tr>
-        </tbody>
-      </table>
-      <iframe class="map" title="Map showing Kathmandu Peace Guest House on Paknajol Marg" src="https://www.google.com/maps?q=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="section find" id="find-us">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Find us in Paknajol</h2>
+        <p class="lead">Call, email or message us. We answer booking questions directly.</p>
+      </div>
+      <div class="find__grid">
+        <div class="contact">
+          <dl>
+            <div><dt>Address</dt><dd>Paknajol Marg, Kathmandu, Bagmati Province 44600, Nepal</dd></div>
+            <div><dt>Telephone</dt><dd><a href="tel:+97714980369">+977 1-4980369</a></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/9779851013309" rel="noopener">+977 985 1013309</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:ktmpeace@ntc.net.np">ktmpeace@ntc.net.np</a></dd></div>
+            <div><dt>Check in and out</dt><dd>In from 12 noon, out by 12 noon</dd></div>
+            <div><dt>Rate</dt><dd>From about €12 a night for two, seen on Google in November 2026. Ask for the rate on your dates.</dd></div>
+          </dl>
+          <div class="contact__actions">
+            <a class="btn btn--gold" href="tel:+97714980369">Call to book</a>
+            <a class="btn btn--wa" href="https://wa.me/9779851013309" rel="noopener"><img src="https://cdn.simpleicons.org/whatsapp/ffffff" width="20" height="20" alt="">WhatsApp</a>
+            <a class="text-link text-link--light" href="https://www.google.com/maps/search/?api=1&query=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <iframe class="map" title="Map showing Kathmandu Peace Guest House on Paknajol Marg" src="https://www.google.com/maps?q=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
 
 </main>
 
-<a class="btn btn--wa wa-float" href="https://wa.me/9779851013309" rel="noopener" aria-label="Chat with the guest house on WhatsApp"><img src="https://cdn.simpleicons.org/whatsapp/f3efe9" width="20" height="20" alt="">WhatsApp</a>
-
-<footer class="foot">
-  <div class="container">
-    <p class="foot__mark">Kathmandu Peace Guest House</p>
-    <div class="foot__row">
-      <ul class="foot__links">
-        <li><a href="#rooms">Rooms</a></li>
-        <li><a href="#garden">Garden</a></li>
-        <li><a href="#stay">The stay</a></li>
-        <li><a href="#find-us">Find us</a></li>
-        <li><a href="#book">Book a room</a></li>
-      </ul>
-      <p class="foot__legal">© 2026 Kathmandu Peace Guest House, Paknajol Marg, Kathmandu</p>
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <p class="site-footer__name">Kathmandu Peace Guest House</p>
+      <p>Paknajol Marg, Kathmandu 44600, Nepal</p>
     </div>
+    <nav aria-label="Footer">
+      <a href="#welcome">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#stay">Your stay</a>
+      <a href="#garden">Garden</a>
+      <a href="#find-us">Find us</a>
+    </nav>
+    <div>
+      <p><a href="tel:+97714980369">+977 1-4980369</a></p>
+      <p><a href="mailto:ktmpeace@ntc.net.np">ktmpeace@ntc.net.np</a></p>
+      <p><a href="https://wa.me/9779851013309" rel="noopener">WhatsApp +977 985 1013309</a></p>
+    </div>
+  </div>
+  <div class="wrap site-footer__legal">
+    <p>© 2026 Kathmandu Peace Guest House</p>
   </div>
 </footer>
 
-<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
-document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+<a class="wa-float" href="https://wa.me/9779851013309" rel="noopener" aria-label="Chat with the guest house on WhatsApp">
+  <img src="https://cdn.simpleicons.org/whatsapp/ffffff" width="28" height="28" alt="">
+</a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged photo">
+  <img alt="">
+  <button class="btn btn--ghost btn--small" type="button" data-close>Close</button>
+</dialog>
+
 <script>
 (() => {
+  // header: solid once the page scrolls, and a menu on phones
+  const header = document.getElementById('site-header');
+  const onScroll = () => header.classList.toggle('is-solid', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  const toggle = header.querySelector('.menu-toggle');
+  const setMenu = (open) => { header.classList.toggle('is-open', open); toggle.setAttribute('aria-expanded', String(open)); toggle.textContent = open ? 'Close' : 'Menu'; };
+  toggle.addEventListener('click', () => setMenu(!header.classList.contains('is-open')));
+  header.querySelectorAll('.site-nav a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+
+  // booking: writes an email enquiry to the guest house
   const iso = (d) => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  const nice = (v) => new Date(v + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   const day = 86400000;
   const form = document.querySelector('.booking');
-  const cin = form.querySelector('#checkin'), cout = form.querySelector('#checkout'), help = form.querySelector('[aria-live]');
-  const copy = form.querySelector('.booking__copy');
+  const cin = form.querySelector('#checkin'), cout = form.querySelector('#checkout');
+  const help = form.querySelector('.booking__help'), copy = form.querySelector('.booking__copy');
+  const to = form.dataset.email;
   let enquiry = '';
-  copy.addEventListener('click', () => {
-    if (!navigator.clipboard) { help.textContent = enquiry; return; }
-    navigator.clipboard.writeText(enquiry).then(() => { help.textContent = 'Enquiry copied. Paste it into any email or message to ' + form.dataset.email + '.'; }, () => { help.textContent = enquiry; });
-  });
-  const menu = document.querySelector('.nav__menu');
-  menu.querySelectorAll('a').forEach((l) => l.addEventListener('click', () => { menu.open = false; }));
   const today = new Date();
   cin.min = iso(today);
   cin.value = iso(new Date(today.getTime() + day));
@@ -234,25 +302,24 @@ document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && 
     e.preventDefault();
     const bad = [cin, cout].find((f) => !f.checkValidity());
     [cin, cout].forEach((f) => f.toggleAttribute('aria-invalid', f === bad));
-    if (bad) { bad.setAttribute('aria-describedby', help.id); help.textContent = 'Choose a check-in date from today, and a check-out date after it.'; bad.focus(); return; }
-    if (form.dataset.email) {
-      const nice = (v) => new Date(v + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-      const guests = form.querySelector('#guests').value;
-      const subject = 'Room enquiry, ' + nice(cin.value) + ' to ' + nice(cout.value);
-      const body = 'Hello,\n\nDo you have a room free for these dates?\n\nCheck in: ' + nice(cin.value) + '\nCheck out: ' + nice(cout.value) + '\nGuests: ' + guests + '\n\nMy name: \nMy phone: \n\nThank you.';
-      enquiry = 'To: ' + form.dataset.email + '\nSubject: ' + subject + '\n\n' + body;
-      window.location.href = 'mailto:' + form.dataset.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      help.textContent = 'Your email app should open with the enquiry written. If it does not, copy the enquiry and send it to ' + form.dataset.email + ', call +977 1-4980369, or WhatsApp +977 985 1013309.';
-      copy.hidden = false;
-      return;
-    }
-    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: online booking is not connected yet. Call +977 1-4980369 to ask about these dates.'; return; }
-    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form) })
-      .then((r) => { help.textContent = r.ok ? 'Your dates reached the front desk.' : 'That did not go through. Try again in a minute, or call +977 1-4980369.'; })
-      .catch(() => { help.textContent = 'That did not go through. Try again in a minute, or call +977 1-4980369.'; });
+    if (bad) { bad.setAttribute('aria-describedby', help.id); help.textContent = 'Choose a check-in date from today, and a check-out date after it.'; copy.hidden = true; bad.focus(); return; }
+    const guests = form.querySelector('#guests').value;
+    const subject = 'Room enquiry, ' + nice(cin.value) + ' to ' + nice(cout.value);
+    const body = 'Hello,\n\nDo you have a room free for these dates?\n\nCheck in: ' + nice(cin.value) + '\nCheck out: ' + nice(cout.value) + '\nGuests: ' + guests + '\n\nMy name: \nMy phone: \n\nThank you.';
+    enquiry = 'To: ' + to + '\nSubject: ' + subject + '\n\n' + body;
+    window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    help.textContent = 'Your email app should open with the enquiry written. If it does not, copy the enquiry and send it to ' + to + ', call +977 1-4980369, or WhatsApp +977 985 1013309.';
+    copy.hidden = false;
   });
-  const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -10% 0px' });
-  document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+  copy.addEventListener('click', () => {
+    if (!navigator.clipboard) { help.textContent = enquiry; return; }
+    navigator.clipboard.writeText(enquiry).then(() => { help.textContent = 'Enquiry copied. Paste it into an email or message to ' + to + '.'; }, () => { help.textContent = enquiry; });
+  });
+
+  // photos open larger
+  const box = document.getElementById('lightbox'), big = box.querySelector('img');
+  document.querySelectorAll('[data-zoom]').forEach((b) => b.addEventListener('click', () => { big.src = b.dataset.zoom; big.alt = b.dataset.alt || ''; box.showModal(); }));
+  box.addEventListener('click', (e) => { if (e.target === box || e.target.hasAttribute('data-close')) box.close(); });
 })();
 </script>
 </body>
