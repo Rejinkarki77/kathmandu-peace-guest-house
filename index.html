@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kathmandu Peace Guest House, Paknajol</title>
+<meta name="description" content="Twin rooms and a garden terrace on Paknajol Marg, Kathmandu, from €12 a night. Call +977 1-4980369 to book.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://api.fontshare.com/v2/css?f[]=sentient@300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container">
+    <nav class="nav__bar" aria-label="Main">
+      <a class="nav__mark" href="#top" aria-label="Kathmandu Peace Guest House, home">Kathmandu Peace</a>
+      <ul class="nav__links">
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#garden">Garden</a></li>
+        <li><a href="#find-us">Find us</a></li>
+      </ul>
+      <a class="btn btn--small" href="#book">Book a room</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1>Kathmandu Peace Guest House</h1>
+        <p class="lead">Twin rooms and a garden terrace in Paknajol, from €12 a night.</p>
+      </div>
+
+      <figure class="print hero__print">
+        <div class="print__frame" data-slot="hero" data-alt="A twin room at the guest house, beds made, lamp lit">
+          <img src="images/room-twin.jpg" width="894" height="592" alt="Twin room with two made beds, striped blankets and a lit bedside lamp" fetchpriority="high">
+        </div>
+        <figcaption><span>Twin room</span><span class="muted">Paknajol Marg</span></figcaption>
+      </figure>
+
+      <form class="booking stock" id="book" data-email="ktmpeace@ntc.net.np" data-endpoint="" novalidate aria-label="Check availability">
+        <div class="field">
+          <label for="checkin">Check in</label>
+          <input id="checkin" name="checkin" type="date" required>
+        </div>
+        <div class="field">
+          <label for="checkout">Check out</label>
+          <input id="checkout" name="checkout" type="date" required>
+        </div>
+        <div class="field">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option value="1">1 guest</option>
+            <option value="2" selected>2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">Check availability</button>
+        <p class="booking__help" id="booking-help" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="rooms" id="rooms">
+    <div class="container rooms__inner">
+      <div class="rooms__text">
+        <h2>Two beds, a desk, a window.</h2>
+        <p class="lead">Rooms are plain and warm, with wood underfoot and daylight on two sides.</p>
+        <dl class="ruled facts">
+          <div><dt>Beds</dt><dd>Two singles, made with white linen</dd></div>
+          <div><dt>Desk</dt><dd>A long wooden desk and a coat stand</dd></div>
+          <div><dt>Floor</dt><dd>Parquet, with a woven rug between the beds</dd></div>
+          <div><dt>Screen</dt><dd>A television on the wall</dd></div>
+        </dl>
+      </div>
+      <figure class="print rooms__print" data-reveal>
+        <div class="print__frame print__frame--wide" data-slot="room" data-alt="A twin room with corner windows and a desk">
+          <img src="images/room-window.jpg" width="796" height="442" alt="Twin room with corner windows, a wooden desk and parquet floor" loading="lazy">
+        </div>
+        <figcaption><span>Corner twin</span><span class="muted">Windows on two walls</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="word" aria-label="Guest rating">
+    <div class="container">
+      <p class="statement">Guests on Google rate the house 4.2 out of 5, across 267 reviews.</p>
+      <p class="word__note">A 3-star hotel on its Google listing.</p>
+    </div>
+  </section>
+
+  <section class="garden" id="garden">
+    <div class="container garden__inner">
+      <figure class="print garden__print" data-reveal>
+        <div class="print__frame" data-slot="garden" data-alt="The garden terrace, chairs among the plants">
+          <img src="images/garden.jpg" width="874" height="592" alt="Garden terrace with a table and chair among red flowers and palms, a painted mountain behind" loading="lazy">
+        </div>
+        <figcaption><span>Garden terrace</span><span class="muted">Painted peaks on the wall</span></figcaption>
+      </figure>
+      <div class="garden__text">
+        <h2>A terrace under painted peaks.</h2>
+        <p class="lead">A table sits among red flowers and palms, with the Himalaya painted on the wall behind.</p>
+        <p><a class="link" href="#book">Pick your dates</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="find" id="find-us">
+    <div class="container find__inner">
+      <div class="find__head">
+        <h2>Find the house in Paknajol.</h2>
+        <div class="find__actions">
+          <a class="btn" href="tel:+97714980369">Call to book</a>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&query=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <table class="details">
+        <tbody>
+          <tr><th scope="row">Address</th><td>Paknajol Marg, Kathmandu, Bagmati Province 44600, Nepal</td></tr>
+          <tr><th scope="row">Telephone</th><td class="num"><a href="tel:+97714980369">+977 1-4980369</a></td></tr>
+          <tr><th scope="row">Email</th><td><a href="mailto:ktmpeace@ntc.net.np">ktmpeace@ntc.net.np</a></td></tr>
+          <tr><th scope="row">Rate</th><td>From €12 a night for two guests, as listed on Google for 30 November</td></tr>
+          <tr><th scope="row">Check in</th><td><span class="fill" data-fill="check-in-time">check-in time to be confirmed</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__mark">Kathmandu Peace Guest House</p>
+    <div class="foot__row">
+      <ul class="foot__links">
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#garden">Garden</a></li>
+        <li><a href="#find-us">Find us</a></li>
+        <li><a href="#book">Book a room</a></li>
+      </ul>
+      <p class="foot__legal">© 2026 Kathmandu Peace Guest House, Paknajol Marg, Kathmandu</p>
+    </div>
+  </div>
+</footer>
+
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+<script>
+(() => {
+  const iso = (d) => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  const day = 86400000;
+  const form = document.querySelector('.booking');
+  const cin = form.querySelector('#checkin'), cout = form.querySelector('#checkout'), help = form.querySelector('[aria-live]');
+  const today = new Date();
+  cin.min = iso(today);
+  cin.value = iso(new Date(today.getTime() + day));
+  cout.value = iso(new Date(today.getTime() + 2 * day));
+  const sync = () => { if (!cin.value) return; const next = iso(new Date(new Date(cin.value).getTime() + day)); cout.min = next; if (!cout.value || cout.value < next) cout.value = next; };
+  sync();
+  cin.addEventListener('change', sync);
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bad = [cin, cout].find((f) => !f.checkValidity());
+    [cin, cout].forEach((f) => f.toggleAttribute('aria-invalid', f === bad));
+    if (bad) { bad.setAttribute('aria-describedby', help.id); help.textContent = 'Choose a check-in date from today, and a check-out date after it.'; bad.focus(); return; }
+    if (form.dataset.email) {
+      const guests = form.querySelector('#guests').value;
+      const subject = 'Room enquiry, ' + cin.value + ' to ' + cout.value;
+      const body = 'Hello,\n\nDo you have a room free for these dates?\n\nCheck in: ' + cin.value + '\nCheck out: ' + cout.value + '\nGuests: ' + guests + '\n\nMy name: \nMy phone: \n\nThank you.';
+      window.location.href = 'mailto:' + form.dataset.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      help.textContent = 'Your email app should open with the enquiry written. Add your name and press send. If nothing opens, call +977 1-4980369.';
+      return;
+    }
+    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: online booking is not connected yet. Call +977 1-4980369 to ask about these dates.'; return; }
+    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form) })
+      .then((r) => { help.textContent = r.ok ? 'Your dates reached the front desk.' : 'That did not go through. Try again in a minute, or call +977 1-4980369.'; })
+      .catch(() => { help.textContent = 'That did not go through. Try again in a minute, or call +977 1-4980369.'; });
+  });
+  const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -10% 0px' });
+  document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+})();
+</script>
+</body>
+</html>
