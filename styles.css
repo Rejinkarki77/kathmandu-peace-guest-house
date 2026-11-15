@@ -1,7 +1,8 @@
 /* Hallmark · shape: Conversational FAQ, adapted to a guest house · genre: editorial · theme: Atelier (deal 1/3, seed kathmandu-peace-guest-house-3e88·9770fb63·2026-11-15·r0) · job: book · draw: a2d953
- * hero: Ledge · nav: floating pill · footer: mast · imagery: photographs, the user's own 3 (cropped from their listing screenshot), warm · the reception photograph (the user's) washed behind the whole hero · signature: the availability bar pressed on card stock at the hero's base
+ * hero: Ledge · nav: floating pill · footer: mast · imagery: photographs, the user's own 3 (cropped from their listing screenshot), warm · the reception photograph (the user's) shown through the lettering of the name · signature: the availability bar pressed on card stock at the hero's base
  * axes: light/roman-serif/cool · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P3 H4 E4 S4 R4 V4 · weakest: P, the prompt gives few facts; built the page on what the three photographs actually show instead of invented amenities */
+/* Hallmark · waive 2b · a flat single-token ink wash over the reception photograph, clipped to the name · the owner asked for the reception picture to show inside the guest house name */
 @import url("./tokens.css");
 @import url("./base.css");
 
@@ -47,11 +48,11 @@ h3 { font-weight: var(--serif-small); }
 .hero { position: relative; min-height: 100dvh; display: grid; align-items: end; padding-block: calc(var(--nav-height) + var(--space-2xl)) var(--space-2xl); background: linear-gradient(172deg, var(--color-paper-2), var(--color-paper) 70%); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: var(--z-base); background-image: var(--grain); background-size: 220px; mix-blend-mode: multiply; pointer-events: none; }
 .hero__inner { position: relative; z-index: var(--z-raised); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--space-3xl); row-gap: var(--space-2xl); align-items: end; }
-.hero__bg { position: absolute; inset: 0; z-index: 0; }
-.hero__bg > img { object-position: 50% 35%; filter: sepia(0.28) saturate(0.89) contrast(0.94) blur(3px); transform: scale(1.04); }
-.hero::before { content: ""; position: absolute; inset: 0; z-index: var(--z-base); background: linear-gradient(90deg, color-mix(in oklab, var(--color-paper) 96%, transparent) 0%, color-mix(in oklab, var(--color-paper) 90%, transparent) 45%, color-mix(in oklab, var(--color-paper) 45%, transparent) 100%); pointer-events: none; }
 .hero__text { display: grid; gap: var(--space-lg); padding-bottom: var(--space-md); }
 .hero h1 { max-width: 12ch; line-height: 1.02; color: var(--color-ink); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero h1 { font-weight: var(--serif-small); background-image: linear-gradient(color-mix(in oklab, var(--color-ink) 42%, transparent), color-mix(in oklab, var(--color-ink) 42%, transparent)), url("images/reception.jpg"); background-size: cover; background-position: 50% 35%; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+}
 
 /* a print on a cotton mat */
 .print { margin: 0; padding: var(--space-md) var(--space-md) var(--space-sm); border-radius: 2px; background: var(--grain) 0 0 / 220px, linear-gradient(160deg, var(--card-lit), var(--color-card) 55%, var(--card-shade)); box-shadow: var(--shadow-card), inset 1px 1px 0 var(--lit); }
@@ -134,7 +135,6 @@ h3 { font-weight: var(--serif-small); }
   .hero__inner, .rooms__inner, .garden__inner { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
   .field { padding-right: var(--space-lg); }
   .hero__text { padding-bottom: 0; }
-  .hero::before { background: color-mix(in oklab, var(--color-paper) 84%, transparent); }
   .booking { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: var(--space-lg); padding: var(--space-lg); }
   .booking .btn { width: 100%; }
   .garden__text { order: -1; }
