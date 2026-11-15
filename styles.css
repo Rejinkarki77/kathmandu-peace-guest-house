@@ -8,6 +8,7 @@
 :root {
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.3 0 0 0 0 0.25 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23f)'/%3E%3C/svg%3E");
   --nav-height: 60px;
+  --color-whatsapp: oklch(47% 0.13 155); --color-whatsapp-deep: oklch(40% 0.12 155); --color-whatsapp-ink: oklch(97% 0.008 85);
   --control: 52px;
 }
 
@@ -28,6 +29,10 @@ h3 { font-weight: var(--serif-small); }
 .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; transform: none; }
 .btn[aria-busy="true"] { cursor: progress; }
 .btn--small { min-height: 44px; padding: 0 var(--space-md); font-size: var(--text-sm); }
+.btn--wa { gap: var(--space-xs); border-color: var(--color-whatsapp); background: var(--color-whatsapp); color: var(--color-whatsapp-ink); }
+.btn--wa:hover { border-color: var(--color-whatsapp-deep); background: var(--color-whatsapp-deep); color: var(--color-whatsapp-ink); }
+.btn--wa img { flex-shrink: 0; }
+.wa-float { position: fixed; right: var(--space-lg); bottom: var(--space-lg); z-index: var(--z-sticky); box-shadow: var(--shadow-card); }
 .link { color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-accent); text-underline-offset: 0.3em; transition: color var(--dur-short) var(--ease-out); }
 .link:hover { color: var(--color-accent); }
 .link:active { color: var(--color-ink-2); }
@@ -64,7 +69,8 @@ h3 { font-weight: var(--serif-small); }
 .hero__text { display: grid; gap: var(--space-lg); justify-items: center; margin-block: auto; padding-block: var(--space-xl); text-align: center; }
 .hero h1 { max-width: 16ch; line-height: 1.02; color: var(--color-paper); }
 .hero .lead { color: var(--color-paper); }
-.btn--light { margin-top: var(--space-sm); border-color: var(--color-paper); color: var(--color-paper); }
+.hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-md); margin-top: var(--space-sm); }
+.btn--light { border-color: var(--color-paper); color: var(--color-paper); }
 .btn--light:hover { background: var(--color-paper); color: var(--color-ink); }
 .btn--light:focus-visible { outline-color: var(--color-paper); }
 .booking { transform: translateY(50%); }
@@ -174,6 +180,7 @@ h3 { font-weight: var(--serif-small); }
 }
 @media (max-width: 40rem) {
   .nav__bar { padding-left: var(--space-md); }
+  .wa-float { right: var(--space-md); bottom: var(--space-md); }
   .nav__mark { font-size: var(--text-md); }
   .nav__menu summary { padding: 0 var(--space-xs); }
   .btn--small { padding: 0 var(--space-sm); }
