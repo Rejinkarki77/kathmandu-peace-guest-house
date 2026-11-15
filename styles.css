@@ -1,5 +1,5 @@
 /* Hallmark · shape: Conversational FAQ, adapted to a guest house · genre: editorial · theme: Atelier (deal 1/3, seed kathmandu-peace-guest-house-3e88·9770fb63·2026-11-15·r0) · job: book · draw: a2d953
- * hero: Ledge · nav: floating pill · footer: mast · imagery: photographs, the user's own 3 (cropped from their listing screenshot), warm · signature: the availability bar pressed on card stock at the hero's base
+ * hero: Ledge · nav: floating pill · footer: mast · imagery: photographs, the user's own 3 (cropped from their listing screenshot), warm · half the hero is the reception photograph (the user's) · signature: the availability bar pressed on card stock at the hero's base
  * axes: light/roman-serif/cool · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P3 H4 E4 S4 R4 V4 · weakest: P, the prompt gives few facts; built the page on what the three photographs actually show instead of invented amenities */
 @import url("./tokens.css");
@@ -47,6 +47,8 @@ h3 { font-weight: var(--serif-small); }
 .hero { position: relative; min-height: 100dvh; display: grid; align-items: end; padding-block: calc(var(--nav-height) + var(--space-2xl)) var(--space-2xl); background: linear-gradient(172deg, var(--color-paper-2), var(--color-paper) 70%); }
 .hero::after { content: ""; position: absolute; inset: 0; background-image: var(--grain); background-size: 220px; mix-blend-mode: multiply; pointer-events: none; }
 .hero__inner { position: relative; z-index: var(--z-base); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: var(--space-3xl); row-gap: var(--space-2xl); align-items: end; }
+.hero__bg { position: absolute; inset: 0 0 0 50%; }
+.hero__bg > img { object-position: 50% 40%; }
 .hero__text { display: grid; gap: var(--space-lg); padding-bottom: var(--space-md); }
 .hero h1 { max-width: 12ch; line-height: 1.02; color: var(--color-ink); }
 
@@ -74,6 +76,7 @@ h3 { font-weight: var(--serif-small); }
 .rooms { padding-block: var(--section-gap) var(--section-gap-s); }
 .rooms__inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-3xl); align-items: center; }
 .rooms__text { display: grid; gap: var(--space-lg); }
+.rooms__prints { display: grid; gap: var(--space-xl); }
 .rooms h2, .garden h2, .find h2 { color: var(--color-ink); }
 .ruled { border-top: var(--rule-head) solid var(--color-ink); }
 .facts { margin: var(--space-lg) 0 0; }
@@ -130,6 +133,8 @@ h3 { font-weight: var(--serif-small); }
   .hero__inner, .rooms__inner, .garden__inner { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
   .field { padding-right: var(--space-lg); }
   .hero__text { padding-bottom: 0; }
+  .hero { padding-top: 0; }
+  .hero__bg { position: relative; inset: auto; aspect-ratio: 3 / 2; margin-bottom: var(--space-xl); }
   .booking { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: var(--space-lg); padding: var(--space-lg); }
   .booking .btn { width: 100%; }
   .garden__text { order: -1; }
