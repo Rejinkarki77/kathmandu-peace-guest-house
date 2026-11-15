@@ -167,13 +167,14 @@
         <h2>Find the house in Paknajol.</h2>
         <div class="find__actions">
           <a class="btn" href="tel:+97714980369">Call to book</a>
+          <a class="link" href="https://wa.me/9779851013309" rel="noopener">Message on WhatsApp</a>
           <a class="link" href="https://www.google.com/maps/search/?api=1&query=Kathmandu+Peace+Guest+House+Paknajol+Marg+Kathmandu" rel="noopener">Get directions</a>
         </div>
       </div>
       <table class="details">
         <tbody>
           <tr><th scope="row">Address</th><td>Paknajol Marg, Kathmandu, Bagmati Province 44600, Nepal</td></tr>
-          <tr><th scope="row">Telephone</th><td class="num"><a href="tel:+97714980369">+977 1-4980369</a></td></tr>
+          <tr><th scope="row">Telephone</th><td class="num"><a href="tel:+97714980369">+977 1-4980369</a>, or WhatsApp <a href="https://wa.me/9779851013309" rel="noopener">+977 985 1013309</a></td></tr>
           <tr><th scope="row">Email</th><td><a href="mailto:ktmpeace@ntc.net.np">ktmpeace@ntc.net.np</a></td></tr>
           <tr><th scope="row">Check in</th><td>From 12 noon, and out by 12 noon on your last day</td></tr>
           <tr><th scope="row">Rate</th><td>From about €12 a night for two, seen on Google in November 2026. Ask for the rate on your dates.</td></tr>
@@ -236,7 +237,7 @@ document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && 
       const body = 'Hello,\n\nDo you have a room free for these dates?\n\nCheck in: ' + nice(cin.value) + '\nCheck out: ' + nice(cout.value) + '\nGuests: ' + guests + '\n\nMy name: \nMy phone: \n\nThank you.';
       enquiry = 'To: ' + form.dataset.email + '\nSubject: ' + subject + '\n\n' + body;
       window.location.href = 'mailto:' + form.dataset.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      help.textContent = 'Your email app should open with the enquiry written. If it does not, copy the enquiry and send it to ' + form.dataset.email + ', or call +977 1-4980369.';
+      help.textContent = 'Your email app should open with the enquiry written. If it does not, copy the enquiry and send it to ' + form.dataset.email + ', call +977 1-4980369, or WhatsApp +977 985 1013309.';
       copy.hidden = false;
       return;
     }
