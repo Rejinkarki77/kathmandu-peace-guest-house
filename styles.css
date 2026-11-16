@@ -114,9 +114,10 @@ a { color: inherit; }
 .figures dt span { font: 500 0.9375rem/1 var(--body); color: var(--stone); }
 .figures dd { margin: 8px 0 0; font-size: 0.9375rem; line-height: 1.4; color: var(--stone); }
 .welcome__photos { position: relative; padding: 0 0 18% 12%; }
-.welcome__photos img { border-radius: var(--radius); box-shadow: var(--shadow); object-fit: cover; }
-.welcome__photo-a { width: 100%; aspect-ratio: 4 / 5; }
-.welcome__photo-b { position: absolute; left: 0; bottom: 0; width: 58%; aspect-ratio: 4 / 3; border: 6px solid var(--snow); }
+.welcome__photos button { display: block; padding: 0; border: 0; border-radius: var(--radius); background: var(--mist); box-shadow: var(--shadow); overflow: hidden; cursor: zoom-in; }
+.welcome__photos img { width: 100%; height: 100%; object-fit: cover; }
+.welcome__photo-a { width: 100%; aspect-ratio: 4 / 3; }
+.welcome__photo-b { position: absolute; left: 0; bottom: 0; width: 52%; aspect-ratio: 4 / 3; outline: 6px solid var(--snow); }
 
 /* rooms */
 .rooms { background: var(--white); }
